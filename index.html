@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign-up Form</title>
+</head>
+<body>
+    <div id="left-side">
+        <img class="banner-image" src="/images/halie-west-25xggax4bSA-unsplash.jpg" alt="Green leaves">
+        <div class="image-overlay">
+            <img class="odin-logo" src="/images/odin-lined.png" alt="Odin logo">
+            <p class="banner-text">Odin</p>
+        </div>            
+        <div class="credit">
+            <p>Photo by <a class="credit-link" href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a class="credit-link" href="https://unsplash.com/">Unsplash</a></p>
+        </div>        
+    </div>
+    <div id="right-side">
+        <div class="content" id="header">
+            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
+            <p>Sign up <em>now</em> to get started.</p>
+            <p id="you-want-to">You <em>know</em> you want to.</p>
+        </div>
+        <form class="content" action="">
+            <h1>Let's do this!</h1>
+            <div class="form-container">
+                <div class="form-row">
+                    <div class="form-column">
+                        <label for="first_name">First Name</label>
+                        <input type="text" id="first_name" name="first_name">
+                    </div>
+                    <div class="form-column">
+                        <label for="last_name">Last Name</label>
+                        <input type="text" id="last_name" name="last_name">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-column">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="form-column">
+                        <label for="phone-number">Phone Number</label>
+                        <input type="tel" id="phone-number" name="phone-number">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-column">
+                        <label for="password">Password</label>
+                        <input type="password" minlength="8" maxlength="20" size="20" id="password" name="password">
+                    </div>
+                    <div class="form-column">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" minlength="8" maxlength="20" size="20" id="confirm-password" name="confirm-password">
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="content" id="footer">
+            <button type="submit">Create Account</button>
+            <div class="login-container">
+                <p>Already have an account?</p>
+                <a class="login-link" href="index.html">Log in</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

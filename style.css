@@ -1,0 +1,195 @@
+@font-face {
+  font-family: norse-bold;
+  src: url(/fonts/Norse-Bold.otf);
+}
+
+html {
+  font-family: sans-serif, system-ui;
+  font-size: 12px;
+}
+
+body {
+  display: flex;
+  margin: 0px;
+}
+
+#left-side {
+  width: 35vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+
+.banner-image {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+.image-overlay {
+  position: absolute;
+  width: 100%;
+  height: 15vh;
+  top: 20vh;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 0 0.5em 0;
+  
+}
+.odin-logo {
+  height: 100%;
+}
+
+.banner-text {
+  color: white;
+  font-family: norse-bold;
+  font-size: 10vh;
+  margin: 0;
+}
+
+.credit {
+  position: absolute;
+  color: white;
+  margin-bottom: 1rem;
+}
+.credit-link {
+  color: white;
+}
+
+.login-link {
+  color: #596D48;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#right-side {
+  width: 65vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(228, 228, 228);
+}
+
+.content {
+  padding-left: 4rem;
+}
+
+form {
+  min-height: 30vh;
+  box-sizing: border-box;
+  background-color: white;
+  padding-top: 2rem;
+  padding-bottom: 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+}
+
+form,
+button,
+input:focus {
+  
+  box-shadow: 0px 5px 5px rgb(184, 184, 184);
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding: 0px;
+}
+
+.form-row {  
+  display: flex;
+  flex-direction: row;
+  gap: 6em
+}
+
+.form-column {
+  border: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  margin-bottom: 0.25em;
+}
+
+
+input {
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  width: 15vw;
+  border-radius: 5px;
+  border: 1px solid #E5E7EB;
+}
+
+input:focus {
+  border: none;
+  outline: 1px solid blue;
+}
+input:invalid {
+  border: none;
+  outline: 1px solid red;
+}
+
+button,
+.login-container > * {
+  font-size: 1.5rem;
+}
+
+button {
+  box-sizing: border-box;
+  height: 4rem;
+  width: 20rem;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: #596D48;
+  border: 0px;
+  border-radius: 5px;  
+}
+button:hover {
+  border: 2px solid black;
+}
+button:active {
+  border: 2px solid white;
+}
+
+
+#header,
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+p,
+h1 {
+  margin: 0px;
+  max-width: 38vw;
+}
+
+#you-want-to {
+  margin-top: 2rem;
+}
+
+
