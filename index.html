@@ -49,11 +49,13 @@
                 <div class="form-row">
                     <div class="form-column">
                         <label for="password">Password</label>
-                        <input type="password" minlength="8" maxlength="20" size="20" id="password" name="password">
+                        <input type="password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*\W).{8,}" maxlength="24" size="24" id="password" name="password" title="Password must contain upper and lower case letters, numbers, and special symbols and it must be at least 8 characters long.">
+                        <div class="error-message">*Password is too weak</div>                   
                     </div>
                     <div class="form-column">
                         <label for="confirm-password">Confirm Password</label>
-                        <input type="password" minlength="8" maxlength="20" size="20" id="confirm-password" name="confirm-password">
+                        <input type="password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*\W).{8,}" minlength="8" maxlength="24" size="24" id="confirm-password" name="confirm-password" title="Password must contain upper and lower case letters, numbers, and special symbols and it must be at least 8 characters long.">
+                        <div class="error-message">*Password is too weak</div>
                     </div>
                 </div>
             </div>

@@ -76,26 +76,30 @@ body {
 }
 
 .content {
-  padding-left: 4rem;
+  padding-left: 5rem;
+}
+
+#header {
+  padding-bottom: 6rem;
+}
+
+#footer {
+  padding-top: 3rem;
 }
 
 form {
   min-height: 30vh;
   box-sizing: border-box;
   background-color: white;
-  padding-top: 2rem;
-  padding-bottom: 6rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  margin-top: 6rem;
-  margin-bottom: 3rem;
+  padding: 2rem 2rem 2rem 0;
 }
 
 form,
 button,
-input:focus {
-  
+input:focus {  
   box-shadow: 0px 5px 5px rgb(184, 184, 184);
 }
 
@@ -143,6 +147,16 @@ input:focus {
 input:invalid {
   border: none;
   outline: 1px solid red;
+}
+
+input:invalid + .error-message {
+  display: block;
+}
+
+.error-message {
+  display: none;
+  color: red;
+  margin-top: 0.3rem;
 }
 
 button,
